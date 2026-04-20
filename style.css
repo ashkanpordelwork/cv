@@ -1060,6 +1060,37 @@ img { max-width: 100%; display: block; }
 .timeline-item:nth-child(4) { transition-delay: 0.2s; }
 
 /* ===========================
+   LOGOS
+   =========================== */
+.timeline-logo {
+  height: 20px;
+  width: auto;
+  max-width: 110px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(0.85);
+  transition: filter var(--transition);
+}
+
+.timeline-item:hover .timeline-logo {
+  filter: brightness(1);
+}
+
+.project-logo {
+  height: 28px;
+  width: auto;
+  max-width: 52px;
+  object-fit: contain;
+  filter: brightness(0.85);
+  transition: filter var(--transition);
+}
+
+.project-card:hover .project-logo,
+.project-card.is-open .project-logo {
+  filter: brightness(1);
+}
+
+/* ===========================
    PHOSPHOR ICONS FIX
    =========================== */
 ph-icon, [class^="ph-"], [class*=" ph-"] {
