@@ -267,6 +267,7 @@ img { max-width: 100%; display: block; }
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: 12px 24px;
   border-radius: var(--radius-sm);
@@ -277,6 +278,7 @@ img { max-width: 100%; display: block; }
   transition: all var(--transition);
   border: none;
   letter-spacing: 0.3px;
+  text-align: center;
 }
 
 .btn-primary {
@@ -441,6 +443,55 @@ img { max-width: 100%; display: block; }
   border-color: var(--border-light);
   color: var(--text);
   transform: translateX(4px);
+}
+
+/* Case Study accent card */
+.contact-card-accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+  margin-top: 4px;
+}
+
+.contact-card-accent:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: var(--bg);
+  transform: translateX(4px);
+}
+
+.contact-card-accent [class*="ph-"] {
+  color: var(--bg) !important;
+}
+
+.contact-card-accent .card-arrow {
+  opacity: 1 !important;
+  color: var(--bg);
+}
+
+.contact-card-accent:hover .card-arrow {
+  transform: translate(2px, -2px);
+}
+
+.case-study-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex: 1;
+}
+
+.case-study-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+
+.case-study-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
 }
 
 .contact-card .card-arrow {
