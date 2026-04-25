@@ -70,7 +70,7 @@ document.querySelectorAll('section[id]').forEach(s => sectionObserver.observe(s)
 // ============================
 if (!window.matchMedia('(hover: none)').matches) {
   const glow = document.createElement('div');
-  glow.style.cssText = `position:fixed;width:320px;height:320px;pointer-events:none;background:radial-gradient(circle,rgba(232,255,77,0.045) 0%,transparent 70%);border-radius:50%;z-index:0;transform:translate(-50%,-50%);top:0;left:0;`;
+  glow.style.cssText = `position:fixed;width:320px;height:320px;pointer-events:none;background:radial-gradient(circle,rgba(92,51,246,0.06) 0%,transparent 70%);border-radius:50%;z-index:0;transform:translate(-50%,-50%);top:0;left:0;`;
   document.body.appendChild(glow);
   let mx = 0, my = 0, gx = 0, gy = 0;
   document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; }, { passive: true });
