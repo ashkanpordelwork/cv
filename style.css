@@ -768,23 +768,6 @@ img { max-width: 100%; display: block; }
   min-width: 0;
 }
 
-.project-img-wrapper {
-  width: 64px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  background: none;
-  border: none;
-  border-radius: 0;
-}
-
-.project-card:hover .project-img-wrapper,
-.project-card.is-open .project-img-wrapper {
-  border-color: transparent;
-}
-
 .project-placeholder-icon {
   font-size: 28px;
   color: var(--accent);
